@@ -6,10 +6,10 @@ cep.addEventListener('change', ()=>{ //adiciona um escutador de evento na tag ce
         })
         .then((data) => {
             console.log(data)
-            const estado = document.getElementById('estado').value = data.uf
-            const cidade = document.getElementById('cidade').value = data.localidade
-            const bairro = document.getElementById('bairro').value = data.bairro
-            const endereco = document.getElementById('endereco').value = data.logradouro
+            document.getElementById('estado').value = data.uf
+            document.getElementById('cidade').value = data.localidade
+            document.getElementById('bairro').value = data.bairro
+            document.getElementById('endereco').value = data.logradouro
         })
         .catch((erro) => {
             console.log(erro)
